@@ -1,0 +1,24 @@
+﻿ThreeD/
+- styles/
+    - main.css
+- vendor/
+    - three/
+        - examples/
+            - jsm/
+                - utils/
+                    - BufferGeometryUtils.js
+                - loaders/
+                    - GLTFLoader.js
+                - controls/
+                    - OrbitControls.js
+        - build/
+            - three.module.js
+            - three.core.js
+- assets/
+    - textures/
+        - uv-test-bw.png
+    - models/
+        - Flamingo.glb
+- src/
+    - main.js
+- index.html
