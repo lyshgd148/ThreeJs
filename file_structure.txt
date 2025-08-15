@@ -18,6 +18,7 @@
     - textures/
         - uv-test-bw.png
     - models/
+        - motorcycle.glb
         - Flamingo.glb
 - src/
     - World/
@@ -25,9 +26,10 @@
             - Resizer.js
             - renderer.js
         - components/
+            - lights.js
             - scene.js
-            - cube.js
             - camera.js
+            - cube.js
         - World.js
     - main.js
 - index.html
