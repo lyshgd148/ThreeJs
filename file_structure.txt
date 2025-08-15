@@ -20,5 +20,14 @@
     - models/
         - Flamingo.glb
 - src/
+    - World/
+        - systems/
+            - Resizer.js
+            - renderer.js
+        - components/
+            - scene.js
+            - cube.js
+            - camera.js
+        - World.js
     - main.js
 - index.html
