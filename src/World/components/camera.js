@@ -1,3 +1,3 @@
-import { PerspectiveCamera } from 'https://cdn.skypack.dev/three@0.136.2';
+import { PerspectiveCamera } from '../../../vendor/three/build/three.module';
 
 // To do...

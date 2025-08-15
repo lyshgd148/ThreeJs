@@ -1,3 +1,3 @@
-import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from 'https://cdn.skypack.dev/three@0.136.2';
+import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from '../../../vendor/three/build/three.module';
 
 // To do...
