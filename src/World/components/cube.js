@@ -13,7 +13,7 @@ function createCube() {
   const cube = new Mesh(geometry, material);
 
   
- cube.rotation.set(-0.5, -0.1, 0.8);
+  cube.rotation.set(-0.5, -0.1, 0.8);
 
   return cube;
 }
