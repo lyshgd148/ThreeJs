@@ -18,15 +18,34 @@ class World {
         scene = createScene();
         renderer = createRenderer();
         container.append(renderer.domElement);
-        const cube = createCube();
+        this.cube = createCube();
         const light = createLights();
 
-        scene.add(cube,light);
+        scene.add(this.cube, light);
         const resizer = new Resizer(container, camera, renderer);
     }
 
+
+
+    delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+
     // 2. Render the scene
-    render() { renderer.render(scene, camera); }
+    async render() {
+        let ix = 0, iy = 0, iz = 0;
+
+        while (1) {
+            ix += 0.01;
+            iy += 0.02;
+            iz += 0.015;
+            this.cube.rotation.set(ix, iy, iz);
+            await this.delay(100);
+            renderer.render(scene, camera);
+        }
+
+    }
 }
 
 export { World };
